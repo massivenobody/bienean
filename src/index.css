@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  --color-brand-50: #e8f8ef;
+  --color-brand-100: #c6eed8;
+  --color-brand-200: #8fdcae;
+  --color-brand-300: #52c981;
+  --color-brand-400: #1fb55a;
+  --color-brand-500: #00a651;
+  --color-brand-600: #008544;
+  --color-brand-700: #066836;
+  --color-brand-800: #0a522d;
+  --color-brand-900: #0a4328;
+  --color-ink-900: #0c0f0d;
+  --color-ink-600: #3d4540;
+  --color-ink-400: #6b736e;
+  --color-surface: #f6f8f6;
+  --color-card: #ffffff;
+  --shadow-soft: 0 4px 24px -4px rgb(0 0 0 / 0.08), 0 12px 32px -8px rgb(0 80 40 / 0.06);
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.5rem;
+}
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-surface text-ink-900 font-sans antialiased;
+  }
+}
